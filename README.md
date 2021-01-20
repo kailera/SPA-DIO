@@ -1,27 +1,25 @@
-# Spa
+# SPA---Desenvolvendo-SPA-com-Angular
+## Aula ministrada pela professora Camila Ribeiro Ferreira - 19/01/2021
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+#### Componentes:
+Shared
+-header
+-content
+-footer
 
-## Development server
+Components
+-sedans
+-pickups
+-suvs
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Components do Angular Material Utilizados:
+MatToolbarModule,    
+MatIconModule,
+MatTabsModule,
+MatCardModule,
+MatDialogModule
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Neste projeto criei um SPA de mostra de carros de 3 seguimentos. As paginas são alternadas pelas tabs localizada no component content. Assim, a página não é atualizada, mantendo o conceito de Single Page Aplication. Cada componente mostra varios cards de um seguimento de veículos (sedans, pickups e suvs), cada card com um botão de curtir que habilita um MatDialog para confirmação da Ação. Para fins de aprendizado, apliquei o property biding nas tabs, onde os textos das labels vem do componente.ts, e nos eventos de click das tabs e dos MatDialogs. Apliquei o roteamento padrao inicial no onInit do content.component.ts para a primeira aba a ser sempre mostrada ser a página dos sedans. 
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Posteriormente posso aplicar slideshows de veículos e um sistema de votação para os carros mais votados.
